@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Gauge Meter Project
+
+This is a Next.js project that displays two interactive gauge meters using `react-plotly.js`. One gauge spans **270 degrees**, and the other spans **180 degrees**. Users can modify the gauge sections and change colors dynamically.
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally, follow these steps:
 
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your system.
+
+### Installation
+Clone the repository and install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Development Server
+Start the development server with the following command:
+```bash
+npm run dev
+```
+Then, open [http://localhost:3000](http://localhost:3000) in your browser to see the application in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project visualizes speedometer-style gauges using **Plotly.js** in a Next.js environment. It consists of two gauges:
+
+1. **270-degree gauge**: A circular gauge that spans 270 degrees.
+2. **180-degree gauge**: A half-circle gauge that spans 180 degrees.
+
+Each gauge consists of:
+- A **colored segmented dial**, which represents different sections.
+- A **needle indicator**, which moves based on user input.
+- A **numerical display**, showing the current value.
+
+## Features
+- **Dynamic Gauge Sections**: Users can define multiple sections in the gauge.
+- **Customizable Colors**: Users can set custom colors for each section.
+- **Interactive Needle**: The needle updates in real-time based on user input.
+- **Two-way Binding**: A slider allows users to control the gauge value dynamically.
+
+## Technologies Used
+- **Next.js**: Framework for React applications.
+- **React & TypeScript**: Frontend development.
+- **Plotly.js**: For rendering the gauge meters.
+- **Tailwind CSS**: For styling.
 
 ## Learn More
+To explore more about the technologies used:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Plotly.js Documentation](https://plotly.com/javascript/)
+- [React Documentation](https://reactjs.org/)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Enjoy customizing your gauge meters! 🚀
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
